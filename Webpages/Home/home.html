@@ -2,16 +2,76 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Caleb Lanphere | Home</title>
+    <title>Home | Caleb Lanphere</title>
+    <link href="/Webpages/CSS/SharedComponents.css" rel="stylesheet">
+    <link href="../CSS/Home/Home.css" rel="stylesheet">
 </head>
 <body>
     <nav class="masterNavbar">
-        <div class="homeLink"></div>
-        <a href="/Webpages/Projects/projects.html">Projects</a>
+        <div class="homeLink">
+            <a href="/Webpages/Home/home.html" class="navLinksEnd">Caleb Lanphere</a>
+        </div>
+        <ul class="navPageLinks">
+            <li><a href="/Webpages/Projects/projects.html">About</a></li>
+            <li><a href="/Webpages/Projects/projects.html">Projects</a></li>
+            <li><a href="/Webpages/Projects/projects.html" class="navLinksEnd">Contact</a></li>
+        </ul>
     </nav>
     <header class="homeHeader">
-
+        <div class="verticalSpacer">
+            <h1 class="homeHeaderH1">Caleb Lanphere</h1>
+            <div class="underliningSeparatorBar"></div>
+            <h3 class="homeHeaderH3">Computer Science - St. Bonaventure University</h3>
+        </div>
     </header>
+    <div class="projectsSection">
+        <h2 class="projectsH2">Projects</h2>
+        <div class="projectSortBar">
+            <select class="projectSortBy">
+                <option>All</option>
+                <option>Personal Projects</option>
+                <option>Classwork</option>
+            </select>
+            <select class="classSortBy">
+                <option>All</option>
+                <option>CS-257</option>
+            </select>
+        </div>
+        <div class="projectsContainer">
+            <div class="projectEntry projectEntry1">
+                <div class="projectEntrySpacer">
+                    <img src="../Assets/Images/PortfolioWorks/PersonalProjects/TextMeApplication/TextMeAppLogoSmall.png"
+                    alt="Logo for an instant messaging application named TextMe">
+                    <h4>TextMe</h4>
+                    <footer class="projectEntryFooter">Personal Project</footer>
+                </div>
+            </div>
+            <div class="projectEntry projectEntry2">
+                <div class="projectEntrySpacer">
+                    <img src="../Assets/Images/PortfolioWorks/PersonalProjects/Blockout/Blockout1.png"
+                         alt="Screenshot of an in-development video game">
+                    <h4>Blockout</h4>
+                    <footer class="projectEntryFooter">Personal Project</footer>
+                </div>
+            </div>
+            <div class="projectEntry projectEntry3">
+                <div class="projectEntrySpacer">
+                    <img src="../Assets/Images/PortfolioWorks/PersonalProjects/RedCell/RedCell1.png"
+                         alt="Screenshot of an in-development video game">
+                    <h4>Red Cell: Point Zero</h4>
+                    <footer class="projectEntryFooter">Personal Project</footer>
+                </div>
+            </div>
+            <div class="projectEntry projectEntry3">
+                <div class="projectEntrySpacer">
+                    <img src="../Assets/Images/PortfolioWorks/PersonalProjects/Revolt/Revolt1.JPG"
+                         alt="Screenshot of an in-development video game">
+                    <h4>Revolt</h4>
+                    <footer class="projectEntryFooter">Personal Project</footer>
+                </div>
+            </div>
+        </div>
+    </div>
     <footer>
 
     </footer>

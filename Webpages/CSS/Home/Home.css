@@ -1,0 +1,113 @@
+.homeHeader {
+    background-color: black;
+    height: 35rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../../Assets/Images/Portraits/HeaderImage2.png");
+    background-size: cover;
+    background-position-y: 42%;
+    background-repeat: no-repeat;
+}
+
+.underliningSeparatorBar {
+    border-style: solid none none none;
+    border-color: white;
+    border-radius: 5px;
+    width: 100%;
+    height: 0;
+}
+
+.homeHeaderH1 {
+    text-align: center;
+    color: white;
+    font-size: 6rem;
+}
+
+.homeHeaderH3 {
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.verticalSpacer {
+    display: table-column;
+    width: 50%
+}
+
+.projectsSection {
+    background-color: black;
+    width: 100%;
+    height: auto;
+    align-content: center;
+    justify-content: center;
+}
+
+.projectSortBar {
+    display: flex;
+    background-color: white;
+    height: 25px;
+    width: 95%;
+    margin: auto;
+    justify-content: space-evenly;
+    padding: 5px;
+}
+
+.projectSortBy {
+    background-color: white;
+    height: 25px;
+    width: 150px;
+}
+
+.classSortBy {
+    background-color: white;
+    height: 25px;
+    width: 150px;
+}
+
+.projectsH2 {
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.projectsContainer {
+    display: grid;
+    padding: 1rem;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+    grid-auto-flow: dense;
+    grid-gap: 1rem;
+}
+
+.projectEntry {
+    display: flex;
+    width: 350px;
+    height: 425px;
+    background-color: gray;
+    justify-content: center;
+    color: white;
+    margin: 15px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.projectEntry img {
+    width: 250px;
+    height: 250px;
+    border-radius: 5px;
+}
+
+.projectEntry h4 {
+    text-align: center;
+    font-size: 34px;
+    text-wrap: wrap;
+}
+
+.projectEntryFooter {
+    text-align: center;
+    border-style: solid none none none;
+    border-width: 1px;
+    padding-top: 5px;
+}
