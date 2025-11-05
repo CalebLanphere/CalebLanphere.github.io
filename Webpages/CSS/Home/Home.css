@@ -222,7 +222,7 @@
 .ProjectFullScreenWidget {
     height: 95%;
     width: 95%;
-    display: grid;
+    display: none;
     position: fixed;
     top: 2.5%;
     left: 3%;
@@ -260,8 +260,8 @@
 }
 
 .projectImageDiv img {
-    max-height: 50px;
-    max-width: 50px;
+    max-height: 350px;
+    max-width: 350px;
 }
 
 .imgButtons {
