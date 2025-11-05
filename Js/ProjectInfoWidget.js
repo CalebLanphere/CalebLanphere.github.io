@@ -35,6 +35,26 @@ let imagesToShow = {
         "/Assets/Images/PortfolioWorks/CS-257/DesignForDimensions/BlogSiteSketches/Sketch1.png",
         "/Assets/Images/PortfolioWorks/CS-257/DesignForDimensions/MainPageDesignSketches/Sketch1.png",
         "/Assets/Images/PortfolioWorks/CS-257/DesignForDimensions/ViewerDesignSketches/Sketch1.png",],
+    DesignOnInterviews: ["/Assets/Images/PortfolioWorks/CS-257/DesignOnInterviews/Sketch1.png",
+        "/Assets/Images/PortfolioWorks/CS-257/DesignOnInterviews/Sketch2.png",
+        "/Assets/Images/PortfolioWorks/CS-257/DesignOnInterviews/Sketch3.png",
+        "/Assets/Images/PortfolioWorks/CS-257/DesignOnInterviews/Sketch4.png",
+        "/Assets/Images/PortfolioWorks/CS-257/DesignOnInterviews/Sketch5.png",
+        "/Assets/Images/PortfolioWorks/CS-257/DesignOnInterviews/Sketch6.png",
+        "/Assets/Images/PortfolioWorks/CS-257/DesignOnInterviews/Sketch7.png",
+        "/Assets/Images/PortfolioWorks/CS-257/DesignOnInterviews/Sketch8.png",],
+    TextMeApp: ["/Assets/Images/PortfolioWorks/PersonalProjects/TextMeApplication/TextMeAppIcon.png",
+    "/Assets/Images/PortfolioWorks/PersonalProjects/TextMeApplication/TextMeAppLogoLarge.png",
+    "/Assets/Images/PortfolioWorks/PersonalProjects/TextMeApplication/TextMeAppLogoSmall.png"],
+    Blockout: ["/Assets/Images/PortfolioWorks/PersonalProjects/Blockout/Blockout1.png",
+        "/Assets/Images/PortfolioWorks/PersonalProjects/Blockout/Blockout2.png"],
+    RCPZ: ["/Assets/Images/PortfolioWorks/PersonalProjects/RedCell/RedCell1.png",
+        "/Assets/Images/PortfolioWorks/PersonalProjects/RedCell/RedCell2.png"],
+    Revolt: ["/Assets/Images/PortfolioWorks/PersonalProjects/Revolt/Revolt1.jpg",
+        "/Assets/Images/PortfolioWorks/PersonalProjects/Revolt/Revolt2.jpg"],
+    OPHS: ["/Assets/Images/PortfolioWorks/PersonalProjects/OPHS/OPHS1.png",
+        "/Assets/Images/PortfolioWorks/PersonalProjects/OPHS/OPHS2.png"],
+    ConstructHome: ["/Assets/Images/PortfolioWorks/PersonalProjects/ConstructHome/CH1.png"]
 };
 let selectedPhotoArray;
 let isPhotoArraySelected = false;
@@ -70,6 +90,27 @@ function getCorrectPhotoArray() {
     }
     if(projectImage.dataset.project === "DesignForDimensions") {
         return imagesToShow.DesignForDimensions;
+    }
+    if(projectImage.dataset.project === "DesignOnInterviews") {
+        return imagesToShow.DesignOnInterviews;
+    }
+    if(projectImage.dataset.project === "TextMeApp") {
+        return imagesToShow.TextMeApp;
+    }
+    if(projectImage.dataset.project === "Blockout") {
+        return imagesToShow.Blockout;
+    }
+    if(projectImage.dataset.project === "RCPZ") {
+        return imagesToShow.RCPZ;
+    }
+    if(projectImage.dataset.project === "Revolt") {
+        return imagesToShow.Revolt;
+    }
+    if(projectImage.dataset.project === "OPHS") {
+        return imagesToShow.OPHS;
+    }
+    if(projectImage.dataset.project === "ConstructHome") {
+        return imagesToShow.ConstructHome;
     }
 }
 
