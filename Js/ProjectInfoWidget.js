@@ -28,7 +28,7 @@ let projectImage;
 let previousImage;
 let nextImage;
 let index = 0;
-let imagesToShow = {
+const imagesToShow = {
     DesignForUnderstanding: ["/Assets/Images/PortfolioWorks/CS-257/DesignForUnderstanding/FinalClearDesign.png",
         "/Assets/Images/PortfolioWorks/CS-257/DesignForUnderstanding/FinalPersuasiveDesign.png"],
     DesignForDimensions: ["/Assets/Images/PortfolioWorks/CS-257/DesignForDimensions/FigmaDesign.png",
@@ -63,7 +63,6 @@ function setImageScrollingVars() {
     projectImage = document.getElementById("projectImage" + indexOfProjectSelected);
     previousImage = document.getElementById("previousImage" + indexOfProjectSelected);
     nextImage = document.getElementById("nextImage" + indexOfProjectSelected);
-    console.log("projectImage" + indexOfProjectSelected);
 
     previousImage.addEventListener("click", function(e) {
         e.stopPropagation();
@@ -81,7 +80,6 @@ function setImageScrollingVars() {
         selectedPhotoArray = getCorrectPhotoArray();
         isPhotoArraySelected = true;
     }
-    console.log(selectedPhotoArray);
 }
 
 function getCorrectPhotoArray() {
@@ -115,14 +113,12 @@ function getCorrectPhotoArray() {
 }
 
 function nextPhoto() {
-    if (index !== (selectedPhotoArray.length - 1) && index < selectedPhotoArray.length) {
+    if (index !== (selectedPhotoArray.length - 1) && index < selectedPhotoArray.length - 1) {
         projectImage.setAttribute("src",selectedPhotoArray[index]);
         index++;
-        console.log(index);
-    } else if (index === selectedPhotoArray.length - 1) {
-        index = 0;
+    } else {
         projectImage.setAttribute("src", selectedPhotoArray[index]);
-        console.log(index);
+        index = 0;
     }
 }
 
@@ -130,11 +126,9 @@ function previousPhoto() {
     if (index < selectedPhotoArray.length && index !== 0) {
         projectImage.setAttribute("src",selectedPhotoArray[index]);
         index--;
-        console.log(index);
     } else if (index === 0) {
-        index = (selectedPhotoArray.length - 1);
         projectImage.setAttribute("src", selectedPhotoArray[index]);
-        console.log(index);
+        index = (selectedPhotoArray.length - 1);
     }
 }
 
