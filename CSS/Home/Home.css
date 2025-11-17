@@ -229,19 +229,42 @@
     padding: 30px 0 30px 0;
 }
 
-.contactMe a {
+.contactMe {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.contactMeElement {
     display: grid;
     padding: 15px;
     margin: 15px;
-    text-align: center;
+    width: fit-content;
+    align-items: center;
     border: solid lightgray;
+    color: white;
     border-radius: 15px;
     grid-template-columns: auto auto auto;
 }
 
-.contactMe a, .mainFooter a {
+.contactMeElement svg {
+    display: flex;
+    margin: 5px;
+    align-items: center;
+}
+
+.mainFooter a {
+    display: flex;
+    padding: 5px;
     color: white;
     font-style: normal;
+    align-items: center;
+}
+
+.mainFooter p {
+    padding: 5px;
 }
 
 .ProjectFullScreenWidget {
