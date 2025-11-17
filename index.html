@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Home | Caleb Lanphere</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link href="/CSS/SharedComponents.css" rel="stylesheet">
     <link href="/CSS/Home/Home.css" rel="stylesheet">
     <link href="Assets/Images/Icon/Favicon.ico" type="image/x-icon" rel="icon">
@@ -25,6 +28,7 @@
             <div class="underliningSeparatorBar"></div>
             <h3 class="homeHeaderH3">Computer Science - St. Bonaventure University</h3>
         </div>
+        <div class="blendPortraitToProjects"></div>
     </header>
     <div id="projectSection">
         <h2 class="H2 projectsH2">Projects</h2>
@@ -184,9 +188,17 @@
         <div class="projectContent">
             <div class="projectDesc">
                 <h4>Classwork: User Experience Design Lab</h4>
-                <p>A lab for User Experience Design that had us attend an interview with a client and develop an application design based on the wants and needs specified in their interview.</p>
-                <p></p>
-                <p>Learn more about this project by reading the <a class="projectInTextLink" target="_blank" href="/Assets/DesignDocuments/DesignForCollaboration.docx">Design Document</a></p>
+                <p class="descText">A lab for User Experience Design that had us attend an interview with a client and develop an application design based on the wants and needs specified in their interview.</p>
+                <p class="descText">Throughout this lab, I sketched a design that would: </p>
+                <ul class="descText">
+                    <li>Play the live stream of the radio stations broadcast</li>
+                    <li>Reserved a spot for uploading and reading news articles posted</li>
+                    <li>Allows for comments for the live broadcast and each article</li>
+                    <li>Allow for biographical information to be visible to users for each employee of the radio station</li>
+                    <li>Consult the design document for all features</li>
+                </ul>
+                <p class="descText">Following the sketches, my partner and I created a cohesive <i>Figma</i> design that combined our designs together into a cohesive application prototype. Due to time constraints and the task we were given, we focused on feature implementation rather than a cohesive visual design further than implementing university colors across the pages.</p>
+                <p class="descText">Learn more about this project by reading the <a class="projectInTextLink" target="_blank" href="/Assets/DesignDocuments/DesignForCollaboration.docx">Design Document</a></p>
             </div>
             <div class="projectImageDiv">
                 <img data-project="DesignForCollaboration" id="projectImage0" src="Assets/Images/PortfolioWorks/CS-257/DesignForCollaboration/Figma3.png">
@@ -199,7 +211,7 @@
         <div class="projectData">
             <p>Started: Oct. 21st, 2025</p>
             <p>Status: Completed Oct. 28th, 2025</p>
-            <a target="_blank" class="projectLink" href="">Access To Project</a>
+            <a target="_blank" class="projectLink" href="Assets/Images/PortfolioWorks/CS-257/DesignForCollaboration.docx">Access To Project</a>
         </div>
         <div class="projectExitButton centerContent">
             <button class="exitProject" id="closeProject0">Close Project</button>
@@ -212,9 +224,9 @@
         <div class="projectContent">
             <div class="projectDesc">
                 <h4>Classwork: User Experience Design Lab</h4>
-                <p>A lab for User Experience Design that had us pick a dataset and create two sets of visualizations for different groups. The first one being "persuasive" (Designed for those who do not have the time and cannot read a chart), and "clear" (Designed for those who have the time and can read a chart).</p>
-                <p>My partner and I took a dataset named <a class="projectInTextLink" target="_blank" href="https://www.kaggle.com/datasets/atharvasoundankar/gen-ai-misinformation-detection-datase-20242025"><i>Gen AI Misinformation Detection Data (2024-2025)</i></a> and created four charts using the program <i>Tableau™</i>. One of those charts show the correlation between toxicity scores of posts against the reliability score of the sources used to verify that post. The other measured the percentage of who wrote a post per platform, split into non-misinformaton and misinformation. It also included a percentage of posts labeled as misinformation from users and a percentage of posts labeled as misinformation in the dataset.</p>
-                <p>Learn more about this project by reading the <a class="projectInTextLink" target="_blank" href="/Assets/DesignDocuments/DesignForUnderstanding.docx">Design Document</a></p>
+                <p  class="descText">A lab for User Experience Design that had us pick a dataset and create two sets of visualizations for different groups. The first one being "persuasive" (Designed for those who do not have the time and cannot read a chart), and "clear" (Designed for those who have the time and can read a chart).</p>
+                <p class="descText">My partner and I took a dataset named <a class="projectInTextLink" target="_blank" href="https://www.kaggle.com/datasets/atharvasoundankar/gen-ai-misinformation-detection-datase-20242025"><i>Gen AI Misinformation Detection Data (2024-2025)</i></a> and created four charts using the program <i>Tableau™</i>. One of those charts show the correlation between toxicity scores of posts against the reliability score of the sources used to verify that post. The other measured the percentage of who wrote a post per platform, split into non-misinformaton and misinformation. It also included a percentage of posts labeled as misinformation from users and a percentage of posts labeled as misinformation in the dataset.</p>
+                <p class="descText">Learn more about this project by reading the <a class="projectInTextLink" target="_blank" href="/Assets/DesignDocuments/DesignForUnderstanding.docx">Design Document</a></p>
             </div>
             <div class="projectImageDiv">
                 <img data-project="DesignForUnderstanding" id="projectImage1" src="Assets/Images/PortfolioWorks/CS-257/DesignForUnderstanding/FinalPersuasiveDesign.png">
@@ -240,10 +252,10 @@
         <div class="projectContent">
             <div class="projectDesc">
                 <h4>Classwork: User Experience Design Lab</h4>
-                <p>A lab for User Experience Design that took a pre-existing website and recreated it to work better on mobile screen dimensions</p>
-                <p>My partner and I took a few pages from the <i>Internet Archive™</i>'s site and recreated them to work better for mobile screens. These pages included the home page, search and advanced search pages, the blog page, and the content viewer modal.</p>
-                <p>These designs took into account the differences in navigation, precision, and general expectations that exist on mobile devices to make the service feel professional and flow properly for a mobile device. It not only repositioned and resized components, but merged the advanced and regular search pages into a dropdown in the main page and recreated the content viewer modal to allow for normal mobile mappings to apply with books, music, videos, and other content.</p>
-                <p>Learn more about this project by reading the <a class="projectInTextLink" target="_blank" href="/Assets/DesignDocuments/DesignForDimensions.docx">Design Document</a></p>
+                <p class="descText">A lab for User Experience Design that took a pre-existing website and recreated it to work better on mobile screen dimensions</p>
+                <p class="descText">My partner and I took a few pages from the <i>Internet Archive™</i>'s site and recreated them to work better for mobile screens. These pages included the home page, search and advanced search pages, the blog page, and the content viewer modal.</p>
+                <p class="descText">These designs took into account the differences in navigation, precision, and general expectations that exist on mobile devices to make the service feel professional and flow properly for a mobile device. It not only repositioned and resized components, but merged the advanced and regular search pages into a dropdown in the main page and recreated the content viewer modal to allow for normal mobile mappings to apply with books, music, videos, and other content.</p>
+                <p class="descText">Learn more about this project by reading the <a class="projectInTextLink" target="_blank" href="/Assets/DesignDocuments/DesignForDimensions.docx">Design Document</a></p>
             </div>
             <div class="projectImageDiv">
                 <img data-project="DesignForDimensions" id="projectImage2" src="/Assets/Images/PortfolioWorks/CS-257/DesignForDimensions/FigmaDesign.png">
@@ -269,10 +281,10 @@
         <div class="projectContent">
             <div class="projectDesc">
                 <h4>Classwork: User Experience Design Lab</h4>
-                <p>A lab for User Experience Design that used information gained previously in our conducted interviews to create sketches for a product that could solve problems noticed throughout the interviews.</p>
-                <p>Throughout my interviews, I noticed a trend of incorrect information misleading the people interviewed on ranging scales. This gave me the idea to sketch out a software that would make information invisible or change based on "expiration dates"</p>
-                <p>The product would be customizable and have open APIs for usage from other companies and sites with limited modification. This would allow any site to implement their own way to handle expired data. For example, a news site could use it to hide sections of an article if a trustworthy source could not be found within a certain time frame</p>
-                <p>Learn more about this project by reading the <a class="projectInTextLink" target="_blank" href="/Assets/DesignDocuments/DesignOnInterviews.docx">Design Document</a></p>
+                <p class="descText">A lab for User Experience Design that used information gained previously in our conducted interviews to create sketches for a product that could solve problems noticed throughout the interviews.</p>
+                <p class="descText">Throughout my interviews, I noticed a trend of incorrect information misleading the people interviewed on ranging scales. This gave me the idea to sketch out a software that would make information invisible or change based on "expiration dates"</p>
+                <p class="descText">The product would be customizable and have open APIs for usage from other companies and sites with limited modification. This would allow any site to implement their own way to handle expired data. For example, a news site could use it to hide sections of an article if a trustworthy source could not be found within a certain time frame</p>
+                <p class="descText">Learn more about this project by reading the <a class="projectInTextLink" target="_blank" href="/Assets/DesignDocuments/DesignOnInterviews.docx">Design Document</a></p>
             </div>
             <div class="projectImageDiv">
                 <img data-project="DesignOnInterviews" id="projectImage3" src="/Assets/Images/PortfolioWorks/CS-257/DesignOnInterviews/Sketch1.png">
@@ -299,9 +311,9 @@
     <div class="projectContent">
         <div class="projectDesc">
             <h4>Personal Project</h4>
-            <p>TextMe is an instant messenger created using Java. This program follows a server/client architecture and has no user accounts. The program uses the Advanced Encryption Standard and the RSA standard for encrypting the messages sent through the platform. The server stores messages in memory, meaning when the server closes, the message log is erased.</p>
+            <p class="descText">TextMe is an instant messenger created using Java. This program follows a server/client architecture and has no user accounts. The program uses the Advanced Encryption Standard and the RSA standard for encrypting the messages sent through the platform. The server stores messages in memory, meaning when the server closes, the message log is erased.</p>
             <label>Features:</label>
-            <ul>
+            <ul class="descText">
                 <li>Encrypted Messaging</li>
                 <li>Anonymous Accounts</li>
                 <li>Kicking/Warning users</li>
@@ -309,11 +321,11 @@
                 <li>Custom usernames</li>
             </ul>
             <label>Libraries Used:</label>
-            <ul>
+            <ul class="descText">
                 <li>Java.net</li>
                 <li>Java.crypto</li>
             </ul>
-            <p>Learn more about this project on <a class="projectInTextLink" target="_blank" href="https://github.com/CalebLanphere/TextMe">Github</a></p>
+            <p class="descText">Learn more about this project on <a class="projectInTextLink" target="_blank" href="https://github.com/CalebLanphere/TextMe">Github</a></p>
         </div>
         <div class="projectImageDiv">
             <img data-project="TextMeApp" id="projectImage4" src="/Assets/Images/PortfolioWorks/PersonalProjects/TextMeApplication/TextMeAppLogoLarge.png">
@@ -339,7 +351,7 @@
     <div class="projectContent">
         <div class="projectDesc">
             <h4>Personal Project</h4>
-            <p>Blockout is a first person sandbox/tycoon game that has the player creating security systems for clients ranging in sophistication that are tested with AI of varying skill levels. The player is ranked based on various factors, which determines the income received at completion of each mission.</p>
+            <p class="descText">Blockout is a first person sandbox/tycoon game that has the player creating security systems for clients ranging in sophistication that are tested with AI of varying skill levels. The player is ranked based on various factors, which determines the income received at completion of each mission.</p>
         </div>
         <div class="projectImageDiv">
             <img data-project="Blockout" id="projectImage5" src="/Assets/Images/PortfolioWorks/PersonalProjects/Blockout/Blockout1.png">
@@ -364,7 +376,7 @@
     <div class="projectContent">
         <div class="projectDesc">
             <h4>Personal Project</h4>
-            <p>Red Cell: Point Zero is a hyper-tactical first person shooter that packs realism into the heist genre. The game features realistic AI combatants that strategize and attempt to outmaneuver the player. The game follows our protagonist, who after getting kidnapped by a gang and labeled for death, uses his skills learned to provide a life for himself while avoiding capture from the authorities as he works to clear his name.</p>
+            <p class="descText">Red Cell: Point Zero is a hyper-tactical first person shooter that packs realism into the heist genre. The game features realistic AI combatants that strategize and attempt to outmaneuver the player. The game follows our protagonist, who after getting kidnapped by a gang and labeled for death, uses his skills learned to provide a life for himself while avoiding capture from the authorities as he works to clear his name.</p>
         </div>
         <div class="projectImageDiv">
             <img data-project="RCPZ" id="projectImage6" src="/Assets/Images/PortfolioWorks/PersonalProjects/RedCell/RedCell2.png">
@@ -389,7 +401,7 @@
     <div class="projectContent">
         <div class="projectDesc">
             <h4>Personal Project</h4>
-            <p>A 3rd Person action shooter project made in Unreal Engine using Blueprints. The story has you following a man who lost everything he valued and had to use his skills gained as a SWAT member to survive the cruel world who left them behind.</p>
+            <p class="descText">A 3rd Person action shooter project made in Unreal Engine using Blueprints. The story has you following a man who lost everything he valued and had to use his skills gained as a SWAT member to survive the cruel world who left them behind.</p>
         </div>
         <div class="projectImageDiv">
             <img data-project="Revolt" id="projectImage7" src="/Assets/Images/PortfolioWorks/PersonalProjects/Revolt/Revolt1.JPG">
@@ -414,7 +426,7 @@
     <div class="projectContent">
         <div class="projectDesc">
             <h4>Classwork</h4>
-            <p>Operation Hacksaw was a project created for a course in high school, made using Unreal Engine using Blueprints</p>
+            <p class="descText">Operation Hacksaw was a project created for a course in high school, made using Unreal Engine using Blueprints</p>
         </div>
         <div class="projectImageDiv">
             <img data-project="OPHS" id="projectImage8" src="/Assets/Images/PortfolioWorks/PersonalProjects/OPHS/OPHS1.png">
@@ -440,7 +452,7 @@
     <div class="projectContent">
         <div class="projectDesc">
             <h4>Classwork</h4>
-            <p>ConstructHome was a project created for a course in high school, made in Unreal Engine using Blueprints.</p>
+            <p class="descText">ConstructHome was a project created for a course in high school, made in Unreal Engine using Blueprints.</p>
         </div>
         <div class="projectImageDiv">
             <img data-project="ConstructHome" id="projectImage9" src="/Assets/Images/PortfolioWorks/PersonalProjects/ConstructHome/CH1.png">

@@ -1,3 +1,5 @@
+
+
 html {
     scroll-behavior: smooth;
     height: 100%;
@@ -20,10 +22,11 @@ body {
     position: fixed;
     align-items: center;
     justify-content: space-between;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(116, 0, 0, .80);
     padding: 15px;
     height: 15px;
     width: 98%;
+    z-index: 2;
 }
 
 .masterNavbar a {
@@ -54,4 +57,19 @@ body {
 .homeLink a{
     display: flow;
 
+}
+
+.mainFooter {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: rgb(116, 0, 0);
+    padding: 15px;
+    height: auto;
+    margin: 0;
+    color: white;
+    justify-content: space-evenly;
+}
+
+.mainFooter p {
+    margin: 0;
 }
