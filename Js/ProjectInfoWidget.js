@@ -29,6 +29,31 @@ let previousImage;
 let nextImage;
 let index = 0;
 const imagesToShow = {
+    Redesign: ["Assets/Images/PortfolioWorks/CS-257/Redesign/Sketches/Sketch1.png",
+        "Assets/Images/PortfolioWorks/CS-257/Redesign/Sketches/Sketch2.png",
+        "Assets/Images/PortfolioWorks/CS-257/Redesign/Sketches/Sketch3.png",
+        "Assets/Images/PortfolioWorks/CS-257/Redesign/Sketches/Sketch4.png",
+        "Assets/Images/PortfolioWorks/CS-257/Redesign/Sketches/Sketch5.png",
+        "Assets/Images/PortfolioWorks/CS-257/Redesign/Sketches/Sketch6.png",
+        "Assets/Images/PortfolioWorks/CS-257/Redesign/Sketches/Sketch7.png",
+        "Assets/Images/PortfolioWorks/CS-257/Redesign/NewFigma/Figma1.png",
+        "Assets/Images/PortfolioWorks/CS-257/Redesign/NewFigma/Figma2.png",
+        "Assets/Images/PortfolioWorks/CS-257/Redesign/NewFigma/Figma3.png",
+        "Assets/Images/PortfolioWorks/CS-257/Redesign/NewFigma/Figma4.png",
+        "Assets/Images/PortfolioWorks/CS-257/Redesign/NewFigma/Figma5.png",
+        "Assets/Images/PortfolioWorks/CS-257/Redesign/NewFigma/Figma6.png",
+        "Assets/Images/PortfolioWorks/CS-257/Redesign/NewFigma/Figma7.png",
+        "Assets/Images/PortfolioWorks/CS-257/Redesign/NewFigma/Figma8.png",
+        "Assets/Images/PortfolioWorks/CS-257/Redesign/NewFigma/Figma9.png",
+        "Assets/Images/PortfolioWorks/CS-257/Redesign/NewFigma/Figma10.png",
+        "Assets/Images/PortfolioWorks/CS-257/Redesign/NewFigma/Figma11.png",
+        "Assets/Images/PortfolioWorks/CS-257/Redesign/NewFigma/Figma12.png",
+        "Assets/Images/PortfolioWorks/CS-257/Redesign/NewFigma/Figma13.png",
+        "Assets/Images/PortfolioWorks/CS-257/Redesign/NewFigma/Figma14.png",
+        "Assets/Images/PortfolioWorks/CS-257/Redesign/NewFigma/Figma15.png",
+        "Assets/Images/PortfolioWorks/CS-257/Redesign/NewFigma/Figma16.png",
+        "Assets/Images/PortfolioWorks/CS-257/Redesign/NewFigma/Figma17.png",
+        "Assets/Images/PortfolioWorks/CS-257/Redesign/NewFigma/Figma18.png"],
     DesignForCollaboration: ["/Assets/Images/PortfolioWorks/CS-257/DesignForCollaboration/Figma1.png",
         "/Assets/Images/PortfolioWorks/CS-257/DesignForCollaboration/Figma2.png",
         "/Assets/Images/PortfolioWorks/CS-257/DesignForCollaboration/Figma3.png",
@@ -139,6 +164,9 @@ function getCorrectPhotoArray() {
     }
     if(projectImage.dataset.project === "ConstructHome") {
         return imagesToShow.ConstructHome;
+    }
+    if(projectImage.dataset.project === "Redesign") {
+        return imagesToShow.Redesign;
     }
 }
 
