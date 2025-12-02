@@ -33,18 +33,22 @@
     <div id="projectSection">
         <h2 class="H2 projectsH2">Projects</h2>
         <div class="projectSortBar">
-            <label>Project Type: </label>
-            <select id="projectSortBy">
-                <option>All</option>
-                <option>Personal Project</option>
-                <option>Classwork</option>
-            </select>
-            <label id="labelClassSortBy">Class: </label>
-            <select id="classSortBy">
-                <option>All</option>
-                <option>CS-257</option>
-                <option>High School</option>
-            </select>
+            <div class="pTypeBox">
+                <label>Project Type: </label>
+                <select id="projectSortBy">
+                    <option>All</option>
+                    <option>Personal Project</option>
+                    <option>Classwork</option>
+                </select>
+            </div>
+            <div id="cTypeBox" style="display: none">
+                <label id="labelClassSortBy">Class: </label>
+                <select id="classSortBy">
+                    <option>All</option>
+                    <option>CS-257</option>
+                    <option>High School</option>
+                </select>
+            </div>
         </div>
         <div id="projectsContainer">
             <div class="projectEntry" id=Redesign" data-index="0">
@@ -176,7 +180,7 @@
     </div>
     <div id="contactMeSection">
         <h2 class="H2 contactH2">Contact Me</h2>
-        <p>I can be reached by using the following methods:</p>
+        <p class="contactSubtext">I can be reached by using the following methods:</p>
         <div class="contactMe">
             <a class="contactMeElement"  target="_blank" href="mailto:Caleb.Lanphere.1@gmail.com">
                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 42 42"><path fill="#FFFFFF" d="M40.5 31.5v-18S22.3 26.2 20.53 26.859C18.79 26.23.5 13.5.5 13.5v18c0 2.5.53 3 3 3h34c2.529 0 3-.439 3-3zm-.029-21.529c0-1.821-.531-2.471-2.971-2.471h-34c-2.51 0-3 .78-3 2.6l.03.28s18.069 12.44 20 13.12c2.04-.79 19.97-13.4 19.97-13.4l-.029-.129z"/></svg>
@@ -210,7 +214,7 @@
         </div>
         <div class="projectContent">
             <div class="projectDesc">
-                <h4>Classwork: User Experience Design Lab</h4>
+                <h4 class="projectClassPersonalLabel">Classwork: User Experience Design Lab</h4>
                 <p class="descText">A lab for User Experience Design that had me revisit a previous design, reevaluate, and redesign it based on what I have learned throughout the course</p>
                 <p class="descText">I decided to revisit the <i>Internet Archive</i> design, as I felt that after learning more about User Experience design, it could provide itself as a base to show the contrast between my previous abilities and my current abilities</p>
                 <p class="descText">These designs focused on furthering the 10 Heuristic Goals outlined by Jakob Nielsen in his article <a class="projectInTextLink" target="_blank" href="https://www.nngroup.com/articles/ten-usability-heuristics/">10 Usability Heuristics for User Interface Design</a> by determining the problem areas and redesigning those parts</p>
@@ -239,7 +243,7 @@
         </div>
         <div class="projectContent">
             <div class="projectDesc">
-                <h4>Classwork: User Experience Design Lab</h4>
+                <h4 class="projectClassPersonalLabel">Classwork: User Experience Design Lab</h4>
                 <p class="descText">A lab for User Experience Design that had us attend an interview with a client and develop an application design based on the wants and needs specified in their interview.</p>
                 <p class="descText">Throughout this lab, I sketched a design that would: </p>
                 <ul class="descText">
@@ -275,7 +279,7 @@
         </div>
         <div class="projectContent">
             <div class="projectDesc">
-                <h4>Classwork: User Experience Design Lab</h4>
+                <h4 class="projectClassPersonalLabel">Classwork: User Experience Design Lab</h4>
                 <p  class="descText">A lab for User Experience Design that had us pick a dataset and create two sets of visualizations for different groups. The first one being "persuasive" (Designed for those who do not have the time and cannot read a chart), and "clear" (Designed for those who have the time and can read a chart).</p>
                 <p class="descText">My partner and I took a dataset named <a class="projectInTextLink" target="_blank" href="https://www.kaggle.com/datasets/atharvasoundankar/gen-ai-misinformation-detection-datase-20242025"><i>Gen AI Misinformation Detection Data (2024-2025)</i></a> and created four charts using the program <i>Tableau™</i>. One of those charts show the correlation between toxicity scores of posts against the reliability score of the sources used to verify that post. The other measured the percentage of who wrote a post per platform, split into non-misinformaton and misinformation. It also included a percentage of posts labeled as misinformation from users and a percentage of posts labeled as misinformation in the dataset.</p>
                 <p class="descText">Learn more about this project by reading the <a class="projectInTextLink" target="_blank" href="/Assets/DesignDocuments/DesignForUnderstanding.docx">Design Document</a></p>
@@ -303,7 +307,7 @@
         </div>
         <div class="projectContent">
             <div class="projectDesc">
-                <h4>Classwork: User Experience Design Lab</h4>
+                <h4 class="projectClassPersonalLabel">Classwork: User Experience Design Lab</h4>
                 <p class="descText">A lab for User Experience Design that took a pre-existing website and recreated it to work better on mobile screen dimensions</p>
                 <p class="descText">My partner and I took a few pages from the <i>Internet Archive™</i>'s site and recreated them to work better for mobile screens. These pages included the home page, search and advanced search pages, the blog page, and the content viewer modal.</p>
                 <p class="descText">These designs took into account the differences in navigation, precision, and general expectations that exist on mobile devices to make the service feel professional and flow properly for a mobile device. It not only repositioned and resized components, but merged the advanced and regular search pages into a dropdown in the main page and recreated the content viewer modal to allow for normal mobile mappings to apply with books, music, videos, and other content.</p>
@@ -332,7 +336,7 @@
         </div>
         <div class="projectContent">
             <div class="projectDesc">
-                <h4>Classwork: User Experience Design Lab</h4>
+                <h4 class="projectClassPersonalLabel">Classwork: User Experience Design Lab</h4>
                 <p class="descText">A lab for User Experience Design that used information gained previously in our conducted interviews to create sketches for a product that could solve problems noticed throughout the interviews.</p>
                 <p class="descText">Throughout my interviews, I noticed a trend of incorrect information misleading the people interviewed on ranging scales. This gave me the idea to sketch out a software that would make information invisible or change based on "expiration dates"</p>
                 <p class="descText">The product would be customizable and have open APIs for usage from other companies and sites with limited modification. This would allow any site to implement their own way to handle expired data. For example, a news site could use it to hide sections of an article if a trustworthy source could not be found within a certain time frame</p>
@@ -362,7 +366,7 @@
     </div>
     <div class="projectContent">
         <div class="projectDesc">
-            <h4>Personal Project</h4>
+            <h4 class="projectClassPersonalLabel">Personal Project</h4>
             <p class="descText">TextMe is an instant messenger created using Java. This program follows a server/client architecture and has no user accounts. The program uses the Advanced Encryption Standard and the RSA standard for encrypting the messages sent through the platform. The server stores messages in memory, meaning when the server closes, the message log is erased.</p>
             <label>Features:</label>
             <ul class="descText">
@@ -402,7 +406,7 @@
     </div>
     <div class="projectContent">
         <div class="projectDesc">
-            <h4>Personal Project</h4>
+            <h4 class="projectClassPersonalLabel">Personal Project</h4>
             <p class="descText">Blockout is a first person sandbox/tycoon game that has the player creating security systems for clients ranging in sophistication that are tested with AI of varying skill levels. The player is ranked based on various factors, which determines the income received at completion of each mission.</p>
         </div>
         <div class="projectImageDiv">
@@ -427,7 +431,7 @@
     </div>
     <div class="projectContent">
         <div class="projectDesc">
-            <h4>Personal Project</h4>
+            <h4 class="projectClassPersonalLabel">Personal Project</h4>
             <p class="descText">Red Cell: Point Zero is a hyper-tactical first person shooter that packs realism into the heist genre. The game features realistic AI combatants that strategize and attempt to outmaneuver the player. The game follows our protagonist, who after getting kidnapped by a gang and labeled for death, uses his skills learned to provide a life for himself while avoiding capture from the authorities as he works to clear his name.</p>
         </div>
         <div class="projectImageDiv">
@@ -452,7 +456,7 @@
     </div>
     <div class="projectContent">
         <div class="projectDesc">
-            <h4>Personal Project</h4>
+            <h4 class="projectClassPersonalLabel">Personal Project</h4>
             <p class="descText">A 3rd Person action shooter project made in Unreal Engine using Blueprints. The story has you following a man who lost everything he valued and had to use his skills gained as a SWAT member to survive the cruel world who left them behind.</p>
         </div>
         <div class="projectImageDiv">
@@ -477,7 +481,7 @@
     </div>
     <div class="projectContent">
         <div class="projectDesc">
-            <h4>Classwork</h4>
+            <h4 class="projectClassPersonalLabel">Classwork</h4>
             <p class="descText">Operation Hacksaw was a project created for a course in high school, made using Unreal Engine using Blueprints</p>
         </div>
         <div class="projectImageDiv">
@@ -503,7 +507,7 @@
     </div>
     <div class="projectContent">
         <div class="projectDesc">
-            <h4>Classwork</h4>
+            <h4 class="projectClassPersonalLabel">Classwork</h4>
             <p class="descText">ConstructHome was a project created for a course in high school, made in Unreal Engine using Blueprints.</p>
         </div>
         <div class="projectImageDiv">

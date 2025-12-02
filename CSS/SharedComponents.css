@@ -42,11 +42,11 @@ body {
 .navPageLinks {
     display: flex;
     list-style: none;
+    padding: 5px;
 }
 
 .navPageLinks li {
     margin: 0 0 0 5px;
-
 }
 
 .masterNavbar .navLinksEnd {
@@ -56,7 +56,6 @@ body {
 
 .homeLink a{
     display: flow;
-
 }
 
 .mainFooter {
@@ -72,4 +71,37 @@ body {
 
 .mainFooter p {
     margin: 0;
+}
+
+@media only screen and (min-width: 393px) and (orientation: portrait) {
+    .masterNavbar {
+        height: auto;
+        width: 100vw;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .masterNavbar a {
+        font-size: 5vw;
+    }
+
+    .homeLink a {
+        font-size: 4vw;
+    }
+
+    .navPageLinks {
+        padding: 0;
+    }
+
+    .mainFooter {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(116, 0, 0);
+        padding: 15px;
+        height: auto;
+        margin: auto;
+        color: white;
+        justify-content: center;
+        align-content: center;
+    }
 }

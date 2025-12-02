@@ -4,6 +4,7 @@ const labelSortByClass = document.getElementById("labelClassSortBy")
 const projectFooters = document.getElementsByClassName("projectEntryFooter")
 const projectContainer = document.getElementById("projectsContainer")
 const noResultsText = document.getElementById("noResultsText")
+const cBox = document.getElementById("cTypeBox")
 
 sortBy.addEventListener('change', function() {
     sortItemsInList(sortBy.value, sortByClass.value)
@@ -17,10 +18,12 @@ function sortItemsInList(sortBy) {
     let classCounter;
 
     if(sortBy === "Classwork") {
+        cBox.style.display = "flex"
         sortByClass.style.visibility = "visible"
         labelSortByClass.style.visibility = "visible"
         classCounter = showOrHideItemsClassSort(sortBy, sortByClass.value)
     } else {
+        cBox.style.display = "none"
         sortByClass.style.visibility = "hidden"
         labelSortByClass.style.visibility = "hidden"
     }
