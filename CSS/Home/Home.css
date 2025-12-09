@@ -12,12 +12,17 @@
     --project-entries-bg-color-hover: rgba(116, 0, 0, 0.80);
 }
 
+body {
+    background-color: rgb(116, 0, 0);
+}
+
 #homeHeader {
     height: 35rem;
     width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     background-image: url("/Assets/Images/Portraits/HeaderImage2.png");
     background-size: cover;
     background-position-y: 42%;
@@ -25,8 +30,6 @@
 }
 
 .blendPortraitToProjects {
-    position: absolute;
-    bottom: 25%;
     height: 150px;
     width: 100%;
     background-image: linear-gradient(to bottom, var(--secondary-bg-color-0t) 0%, var(--primary-bg-color) 75%, var(--primary-bg-color) 100%);
@@ -54,7 +57,9 @@
 
 .verticalSpacer {
     display: table-column;
-    width: 50%
+    width: 50%;
+    position: relative;
+    bottom: -15%;
 }
 
 #projectSection {
@@ -465,8 +470,6 @@ p, a, button, input, textarea, label, select, h1, h2, h3, h4, h5, h6, footer, he
 @media only screen and (min-width: 393px) and (orientation: portrait) {
     #homeHeader {
         height: 75vh;
-        align-items: center;
-        justify-content: center;
         background-image: url("/Assets/Images/Portraits/HeaderImage2.png");
         background-size: 250%;
         background-position-x: 50%;
@@ -474,7 +477,6 @@ p, a, button, input, textarea, label, select, h1, h2, h3, h4, h5, h6, footer, he
     }
 
     .verticalSpacer {
-        zoom: normal;
         width: 75vw;
     }
 
@@ -502,9 +504,6 @@ p, a, button, input, textarea, label, select, h1, h2, h3, h4, h5, h6, footer, he
     }
 
     .blendPortraitToProjects {
-        position: absolute;
-        top: 68vh;
-        height: 150px;
         width: 100%;
         background-image: linear-gradient(to bottom, var(--secondary-bg-color-0t) 0%, var(--primary-bg-color) 75%, var(--primary-bg-color) 100%);
     }
@@ -693,11 +692,6 @@ p, a, button, input, textarea, label, select, h1, h2, h3, h4, h5, h6, footer, he
         height: auto;
     }
 
-    .projectClassPersonalLabel {
-        font-size: 12vw;
-        width: 100%;
-    }
-
     .projectContent {
         display: flex;
         height: auto;
@@ -710,7 +704,7 @@ p, a, button, input, textarea, label, select, h1, h2, h3, h4, h5, h6, footer, he
     }
 
     .projectDesc h4 {
-        font-size: 2vw;
+        font-size: 4vw;
     }
 
     .descText {

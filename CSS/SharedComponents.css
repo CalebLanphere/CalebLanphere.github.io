@@ -6,7 +6,7 @@ html {
     width: 100%;
     margin: 0;
     padding: 0;
-    background-color: darkgray;
+    background-color: rgb(116, 0, 0);
 }
 
 body {
@@ -14,7 +14,7 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
-    background-color: darkgray;
+    background-color: rgb(116, 0, 0);
 }
 
 .masterNavbar {
