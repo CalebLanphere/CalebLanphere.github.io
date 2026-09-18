@@ -29,6 +29,9 @@ let previousImage;
 let nextImage;
 let index = 0;
 const imagesToShow = {
+    Httpserver: [
+        "/Assets/Images/PortfolioWorks/PersonalProjects/HTTPServer/TerminalRunning.png",
+        "/Assets/Images/PortfolioWorks/PersonalProjects/HTTPServer/MainMethod.png"],
     Redesign: ["Assets/Images/PortfolioWorks/CS-257/Redesign/Sketches/Sketch1.png",
         "Assets/Images/PortfolioWorks/CS-257/Redesign/Sketches/Sketch2.png",
         "Assets/Images/PortfolioWorks/CS-257/Redesign/Sketches/Sketch3.png",
@@ -135,6 +138,9 @@ function setImageScrollingVars() {
 }
 
 function getCorrectPhotoArray() {
+    if(projectImage.dataset.project === "Httpserver") {
+        return imagesToShow.Httpserver;
+    }
     if(projectImage.dataset.project === "DesignForCollaboration") {
         return imagesToShow.DesignForCollaboration;
     }
