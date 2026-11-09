@@ -29,6 +29,9 @@ let previousImage;
 let nextImage;
 let index = 0;
 const imagesToShow = {
+    Scrambl: [
+        "/Assets/Images/PortfolioWorks/PersonalProjects/Scrambl/ScrapingResults.png",
+        "/Assets/Images/PortfolioWorks/PersonalProjects/Scrambl/SiteUI.png"],
     Httpserver: [
         "/Assets/Images/PortfolioWorks/PersonalProjects/HTTPServer/TerminalRunning.png",
         "/Assets/Images/PortfolioWorks/PersonalProjects/HTTPServer/MainMethod.png"],
@@ -138,6 +141,9 @@ function setImageScrollingVars() {
 }
 
 function getCorrectPhotoArray() {
+    if(projectImage.dataset.project === "Scrambl") {
+        return imagesToShow.Scrambl;
+    }
     if(projectImage.dataset.project === "Httpserver") {
         return imagesToShow.Httpserver;
     }
@@ -174,6 +180,7 @@ function getCorrectPhotoArray() {
     if(projectImage.dataset.project === "Redesign") {
         return imagesToShow.Redesign;
     }
+
 }
 
 function nextPhoto() {
